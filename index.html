@@ -3,9 +3,25 @@
 <head>
 <meta charset="utf-8">
 <title>test app</title>
-<script src="phonegap.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+// Wait for device API libraries to load
+//
+function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+// device APIs are available
+//
+function onDeviceReady() {
+    // Now safe to use device APIs
+}
+
+</script>
 </head>
-<body>
+<body onload="onLoad()">
+
 <iframe src="http://bioecogeonetwork.it" width="100%" marginwidth="0" height="100%" marginheight="0" align="middle" scrolling="auto" frameborder="0">xx</iframe>
 </body>
 </html>
